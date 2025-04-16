@@ -1,13 +1,13 @@
 const FILE_PATH = process.env.FILE_PATH || './temp';
 const projectPageURL = process.env.URL || '';    // 填写项目域名可自动访问保活，例如：https://www.google.com
 const intervalInMilliseconds = process.env.TIME || 2 * 60 * 1000;// 自动访问间隔时间（2分钟）
-const UUID = process.env.UUID || 'eda8373d-68ec-4399-9d2f-4ddd1b6b9219';
+const UUID = process.env.UUID || 'b3dfea9e-0807-4ab0-b34c-3527fce0c4ad';
 const NEZHA_SERVER = process.env.NEZHA_SERVER || 'nz.abcd.com';  // 哪吒3个变量不全不运行
 const NEZHA_PORT = process.env.NEZHA_PORT || '5555';             // 哪吒端口为443时开启tls
 const NEZHA_KEY = process.env.NEZHA_KEY || '';                   // 哪吒客户端密钥
-const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'fly.feirtzne88.us.kg';               // 固定隧道域名，留空即启用临时隧道
-const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiNzRhZmIwOGFlZGYxZDY2Yjk3YTA0ZDBkYzc1YzhjZTYiLCJ0IjoiZTU3Yjc5YWUtNjYzZi00NzUzLWJkZGItOWM3NWQ3N2Y0ZmU0IiwicyI6Ik5HVmxaRGxsT0RVdFpEYzRPUzAwTnprd0xUZzBaVFl0TVdNd01EbG1OMlk0TldSaiJ9';                   // 固定隧道json或token，留空即启用临时隧道
-const CFIP = process.env.CFIP || 'icook.hk';                // 优选域名或优选ip
+const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'fly.ynowagx.dpdns.org';               // 固定隧道域名，留空即启用临时隧道
+const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiNzRhZmIwOGFlZGYxZDY2Yjk3YTA0ZDBkYzc1YzhjZTYiLCJ0IjoiNzU2YzkyZDctY2M0Ni00ZTMwLWE0NTQtZThlZDBkY2U4MTVjIiwicyI6Ik5UWTJNakUyT0RrdE9URTVNeTAwWmpGakxXSTJOall0Wmpoa00yUmxObVk0T1dNMSJ9';                   // 固定隧道json或token，留空即启用临时隧道
+const CFIP = process.env.CFIP || 'icook.tw';                // 优选域名或优选ip
 const CFPORT = process.env.CFPORT || 443;                        // 节点端口，一般不用改
 const NAME = process.env.NAME || 'flyio';                         // 节点名称
 const port = process.env.PORT || 3000;                           // http服务端口，也是订阅端口，游戏平台需改为分配的端口，否则无法订阅
